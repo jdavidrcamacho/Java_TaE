@@ -51,11 +51,12 @@ public class TicTacToeGame {
 
     // Get a player's move (row and column)
     public static int[] getPlayerMove(char player) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Player " + player + ", enter your move (row and column): ");
-        int row = scanner.nextInt();
-        int col = scanner.nextInt();
-        return new int[] { row, col };
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Player " + player + ", enter your move (row and column): ");
+            int row = scanner.nextInt();
+            int col = scanner.nextInt();
+            return new int[] { row, col };
+        }
     }
 
     // Check if a move is valid
