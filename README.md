@@ -1,5 +1,5 @@
 # Java_TaE
-Trial and error experiments to learn Java
+Trial and error experiments to learn Java as I watch the Udemy course
 
 
     $ javac helloWorld.java
