@@ -1,5 +1,3 @@
-package dev.lpa;
-
 import java.util.LinkedList;
 import java.util.ListIterator;
 
